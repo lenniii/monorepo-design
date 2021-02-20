@@ -1,0 +1,17 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "./lib",
+    "allowJs": false,
+    "emitDeclarationOnly": true
+  }
+}
