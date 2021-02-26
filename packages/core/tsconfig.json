@@ -1,17 +1,8 @@
-// tsconfig.json
 {
   "compilerOptions": {
-    "jsx": "react",
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    /* Module Resolution Options */
-    "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "declaration": true,
-    "outDir": "./lib",
-    "allowJs": false,
-    "emitDeclarationOnly": true
-  }
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "outDir": "./dist"
+  },
+  "exclude": ["./dist"],
+  "extends": "../../tsconfig.json"
 }

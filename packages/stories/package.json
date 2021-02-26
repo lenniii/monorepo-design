@@ -1,0 +1,39 @@
+{
+  "name": "@design/stories",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Dennis Alessandrini <dennis.alessandrini@aesys.tech>",
+  "homepage": "https://github.com/lenniii/monrepo-design#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenniii/monrepo-design.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "storybook:dev": "npm run storybook"
+  },
+  "bugs": {
+    "url": "https://github.com/lenniii/monrepo-design/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@storybook/addon-actions": "^6.1.20",
+    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/addon-links": "^6.1.20",
+    "@storybook/react": "^6.1.20",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9",
+    "babel-loader": "^8.2.2",
+    "postcss": "^7",
+    "storybook-css-modules-preset": "^1.0.6"
+  },
+  "dependencies": {
+    "@design/core": "^0.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  }
+}
