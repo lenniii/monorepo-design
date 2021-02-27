@@ -1,8 +1,0 @@
-.grid {
-  @apply bg-green-600;
-  @apply text-xl;
-  @apply container;
-  @apply divide-indigo-300;
-  @apply bg-gradient-to-t;
-  @apply transform;
-}

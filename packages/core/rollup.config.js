@@ -9,7 +9,7 @@ const plugins = [
     extensions: ['.ts', '.tsx'],
     rootMode: 'upward',
   }),
-  postcss({ extract: true, modules: true }),
+  postcss({ modules: true, extract: true }),
 ];
 
 export default [

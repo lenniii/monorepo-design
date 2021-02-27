@@ -1,10 +1,10 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
-import { Grid } from '@design/core';
+import { Button } from '@design/core';
 
-export const Primary = () => <Grid />;
+export const Primary = () => <Button />;
 
 export default {
   title: 'YourComponent',
-  component: Grid,
+  component: Button,
 };

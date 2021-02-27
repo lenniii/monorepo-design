@@ -37,5 +37,8 @@
     "react": "^17.0.1",
     "tailwindcss": "^2.0.3",
     "autoprefixer": "^10.2.4"
-  }
+  },
+  "browserslist": [
+    "last 4 version"
+  ]
 }

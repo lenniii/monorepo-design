@@ -1,0 +1,4 @@
+.prova {
+  @apply grid;
+  @apply bg-green-600;
+}
