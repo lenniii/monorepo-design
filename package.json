@@ -29,6 +29,6 @@
     "compile": "lerna run compile",
     "serve": "lerna run storybook:dev --parallel",
     "test": "lerna run test",
-    "clean": "lerna run clean"
+    "clean": "lerna run clean && rimraf node_modules"
   }
 }

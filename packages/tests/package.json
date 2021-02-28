@@ -24,6 +24,7 @@
     "url": "https://github.com/lenniii/monrepo-design/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.8",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
