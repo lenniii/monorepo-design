@@ -16,7 +16,8 @@
   "scripts": {
     "compile": "rollup -c && tsc",
     "compile:watch": "rollup -c -w & tsc --watch",
-    "storybook:dev": "npm run compile:watch"
+    "storybook:dev": "npm run compile:watch",
+    "clean": "rimraf dist node_modules"
   },
   "bugs": {
     "url": "https://github.com/lenniii/monrepo-design/issues"

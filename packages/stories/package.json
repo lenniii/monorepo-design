@@ -12,7 +12,8 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "storybook:dev": "npm run storybook"
+    "storybook:dev": "npm run storybook",
+    "clean": "rimraf node_modules"
   },
   "bugs": {
     "url": "https://github.com/lenniii/monrepo-design/issues"
