@@ -1,8 +1,9 @@
 import React, { FC, useState } from 'react';
+import style from './style.module.css';
 
 const Button: FC = () => {
-  const state = useState();
-  return <input type="button" />;
+  const [state, setState] = useState();
+  return <input type="button" className={style.prova} value="ciaone" />;
 };
 
 export default Button;

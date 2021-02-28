@@ -7,5 +7,8 @@
     "project": "./tsconfig.json"
   },
   "ignorePatterns": ["dist", "node_modules", "*.config.js"],
-  "rules": { "import/prefer-default-export": 0 }
+  "rules": { "import/prefer-default-export": 0 },
+  "env": {
+    "jest": true
+  }
 }

@@ -10,7 +10,6 @@
     "url": "git+https://github.com/lenniii/monrepo-design.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "storybook:dev": "npm run storybook"
@@ -32,6 +31,7 @@
   },
   "dependencies": {
     "@design/core": "^0.0.0",
+    "@design/tests": "^0.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
