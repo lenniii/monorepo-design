@@ -1,4 +1,4 @@
 .prova {
-  @apply grid;
-  @apply bg-green-600;
+  font-weight: bolder;
+  @apply text-white bg-gray-900 grid p-2 rounded-sm;
 }
