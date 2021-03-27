@@ -5,10 +5,11 @@ name: Build storybook
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
     paths:
-      - "packages/core"
-      - "packages/stories"
+      - "packages/core/**"
+      - "packages/stories/**"
 jobs:
   build:
     runs-on: ubuntu-latest
