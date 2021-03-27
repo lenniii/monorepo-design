@@ -3,3 +3,4 @@ dist
 coverage
 __snapshots__
 jest_results.json
+.eslintcache

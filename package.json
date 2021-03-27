@@ -18,16 +18,26 @@
   },
   "version": "0.0.0",
   "main": "index.js",
-  "repository": "git@github.com:lenniii/monrepo-design.git",
+  "repository": "git@github.com:lenniii/monorepo-design.git",
   "author": "Dennis Alessandrini <dennis.alessandrini@aesys.tech>",
+  "contributors": [
+    {
+      "name": "Daniele Irsuti",
+      "url": "https://danieleirsuti.dev"
+    }
+  ],
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "compile": "lerna run compile",
-    "serve": "lerna run storybook:dev --parallel",
-    "test": "lerna run test",
+    "app:dev": "lerna run --scope app dev",
+    "app:build": "lerna run --scope app build",
+    "app:serve": "lerna run --scope app serve",
+    "storybook:serve": "lerna run storybook:dev --parallel",
+    "core:test": "lerna run --scope test test",
     "clean": "lerna run clean && rimraf node_modules"
   }
 }
