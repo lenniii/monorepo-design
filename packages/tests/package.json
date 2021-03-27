@@ -17,7 +17,7 @@
     "url": "git+https://github.com/lenniii/monrepo-design.git"
   },
   "scripts": {
-    "test": "jest --config '../../jest.config.js' --json --outputFile=./jest_results.json",
+    "test": "jest --config '../../jest.config.js' --json --outputFile=./jest_results.json --coverage",
     "clean": "rimraf node_modules coverage jest_results.json"
   },
   "bugs": {
