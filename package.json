@@ -36,8 +36,9 @@
     "app:dev": "lerna run --scope app dev",
     "app:build": "lerna run --scope app build",
     "app:serve": "lerna run --scope app serve",
-    "storybook:serve": "lerna run storybook:dev --parallel",
-    "core:test": "lerna run --scope test test",
+    "storybook:serve": "lerna run --scope @design/stories dev --parallel",
+    "storybook:build-storybook": "lerna run --scope @design/stories build-storybook",
+    "core:test": "lerna run --scope @design/tests test",
     "clean": "lerna run clean && rimraf node_modules"
   }
 }
