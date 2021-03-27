@@ -11,7 +11,7 @@ export default {
   title: 'YourComponent',
   component: Button,
   args: {
-    label: 'test123test',
+    label: 'prova123prova',
   },
   argTypes: {
     label: { control: { type: 'text' } },
