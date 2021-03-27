@@ -25,7 +25,6 @@
     "packages/*"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "compile": "lerna run compile",
     "serve": "lerna run storybook:dev --parallel",
     "test": "lerna run test",
