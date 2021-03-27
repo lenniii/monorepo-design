@@ -14,7 +14,7 @@
     "url": "git+https://github.com/lenniii/monrepo-design.git"
   },
   "scripts": {
-    "compile": "rollup -c && tsc",
+    "compile": "rollup -c & tsc",
     "compile:watch": "rollup -c -w & tsc --watch",
     "storybook:dev": "npm run compile:watch",
     "clean": "rimraf dist node_modules"
@@ -34,7 +34,6 @@
     "rollup-plugin-postcss-modules": "^2.0.2",
     "typescript-plugin-css-modules": "^3.2.0",
     "autoprefixer": "^10.2.4"
-
   },
   "dependencies": {
     "react": "^17.0.1",
