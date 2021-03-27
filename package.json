@@ -2,6 +2,9 @@
   "name": "root",
   "private": true,
   "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@commitlint/config-lerna-scopes": "^12.0.1",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
     "eslint": "^7.20.0",
@@ -11,6 +14,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^5.2.0",
     "lerna": "^3.22.1",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
@@ -36,9 +40,10 @@
     "app:dev": "lerna run --scope app dev",
     "app:build": "lerna run --scope app build",
     "app:serve": "lerna run --scope app serve",
-    "storybook:serve": "lerna run --scope @design/stories dev --parallel",
+    "storybook:serve": "lerna run storybook:dev --parallel",
     "storybook:build-storybook": "lerna run --scope @design/stories build-storybook",
     "core:test": "lerna run --scope @design/tests test",
-    "clean": "lerna run clean && rimraf node_modules"
+    "clean": "lerna run clean && rimraf node_modules",
+    "prepare": "husky install"
   }
 }
