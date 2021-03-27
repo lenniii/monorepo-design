@@ -28,7 +28,8 @@
   ],
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "compile": "lerna run compile",
