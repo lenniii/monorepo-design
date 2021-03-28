@@ -1,13 +1,11 @@
-import babel from '@rollup/plugin-babel';
-import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
+import esbuild from 'rollup-plugin-esbuild';
 
 const plugins = [
-  typescript(),
-  babel({
-    exclude: 'node_modules/**',
-    extensions: ['.ts', '.tsx'],
-    rootMode: 'upward',
+  esbuild({
+    jsxFactory: 'React.createElement',
+    jsxFragment: 'React.Fragment',
+    tsconfig: './tsconfig.json',
   }),
   postcss({ modules: true, extract: true }),
 ];
@@ -21,5 +19,6 @@ export default [
       dir: `dist`,
       format: 'esm',
     },
+    external: ['react'],
   },
 ];
