@@ -4,5 +4,7 @@
     "outDir": "./dist"
   },
   "exclude": ["./dist"],
+  "emitDeclarationOnly": true,
+  "declaration": true,
   "extends": "../../tsconfig.json"
 }
