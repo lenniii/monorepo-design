@@ -1,10 +1,10 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "emitDeclarationOnly": true,
+    "declaration": true
   },
-  "exclude": ["./dist"],
-  "emitDeclarationOnly": true,
-  "declaration": true,
-  "extends": "../../tsconfig.json"
+  "exclude": ["./dist"]
 }
