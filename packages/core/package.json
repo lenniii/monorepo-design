@@ -3,24 +3,15 @@
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Dennis Alessandrini <dennis.alessandrini@aesys.tech>",
-  "homepage": "https://github.com/lenniii/monrepo-design#readme",
-  "license": "ISC",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lenniii/monrepo-design.git"
-  },
   "scripts": {
     "compile": "rollup -c & tsc",
     "compile:watch": "rollup -c -w & tsc --watch",
     "storybook:dev": "npm run compile:watch",
     "clean": "rimraf dist node_modules"
-  },
-  "bugs": {
-    "url": "https://github.com/lenniii/monrepo-design/issues"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
